@@ -295,6 +295,7 @@ nav .topnav .closebtn {
 		border: none;
 		outline: none;
 		background: inherit;border-radius: 3px;border-radius: 6px;
+		pointer-events: auto;
 	}
 
 	.topnav-focus .search-box .burger {
@@ -306,8 +307,8 @@ nav .topnav .closebtn {
 		text-transform: uppercase;
 		margin-right: 8px;
 	}
-	.topnav-focus .search-box .burger i {
-		font-size: 26px;
+	.topnav-focus .search-box .burger .fa-bars {
+		font-size: 30px;
 	}
 	.topnav-focus .search-box .burger span {
 		font-size: 10px;
@@ -371,5 +372,17 @@ nav .topnav .closebtn {
 
 	nav .topnav .closebtn:hover {
 		color: red;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	nav .topnav .nav-links .links li a {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	nav .topnav .nav-links .links li a {
+		font-size: 18px;
 	}
 }
