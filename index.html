@@ -62,6 +62,7 @@
             <div class="account-content">
               <div class="account-icon">
                 <i class="fas fa-shopping-cart"></i>
+                <span>3</span>
               </div>
               <div class="account-title">
                 <p>Cart</p>
@@ -86,11 +87,23 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <ul class="links">
               <li><a href="#">Bakery & Pastry</a></li>
-              <li><a href="#">Beverage</a></li>
+              <li class="sub-item-link has-collapsible">
+                <a href="#">Beverage</a><i class="fas fa-angle-down arrow"></i>
+                <ul class="dropdown">
+                  <li><a href="#">Juice & Syrup</a></li>
+                  <li><a href="#">Water</a></li>
+                </ul>
+              </li>
               <li><a href="#">Fresh Food</a></li>
               <li><a href="#">Frozen Food</a></li>
               <li><a href="#">Sweet Grocery</a></li>
-              <li><a href="#">Pet</a></li>
+              <li class="sub-item-link has-collapsible">
+                <a href="#">Pet</a><i class="fas fa-angle-down arrow"></i>
+                <ul class="dropdown">
+                  <li><a href="#">Juice & Syrup</a></li>
+                  <li><a href="#">Water</a></li>
+                </ul>
+              </li>
               <li><a href="#">More</a></li>
               <li><a href="#">Shop All</a></li>
               <li><a href="#">About Us</a></li>
@@ -103,7 +116,197 @@
       </div>
     </nav>
   </header>
-  
+  <script>
+const hasCollapsible = document.querySelectorAll(".has-collapsible");
+
+hasCollapsible.forEach(function (collapsible) {
+  collapsible.addEventListener("click", function () {
+    const subMenu = document.querySelectorAll('.dropdown');
+    subMenu.entries()
+    subMenu.forEach(function(subitem){
+      subitem.classList.toggle('dropdownShow')
+    });
+  });
+});
+
+// hasCollapsible.forEach(function (collapsible) {
+//   collapsible.addEventListener("click", function () {
+//     const subMenu = document.querySelectorAll('.dropdown')
+//     collapsible.classList.toggle("active");
+
+//     hasCollapsible.forEach(function (otherCollapsible) {
+//       if (otherCollapsible !== collapsible) {
+//         otherCollapsible.classList.remove("active");
+//       }
+//     });
+//   });
+// });
+  </script>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="slider-container">
+      
+      <div class="mySlides">
+        <img src="/img/slider/grocery-slide-3.jpg">
+        <div class="slider-info-mobile">
+          <div class="slider-offer">
+            <h1>FROM $10</h1>
+          </div>
+          <div class="slider-title">
+            <h3>Best Deals, only for you</h3>
+          </div>
+          <div class="slider-desc">
+            <p>On Selected Vegetables</p>
+          </div>
+          <div class="slider-btn">
+            <a href="#" class="btn">Shop</a>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
+  </section>
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-container">
+      <div class="full-width-banner">
+        <img src="/img/banner/grocery-leatherboard-banner.jpg">
+      </div>
+    </div>
+    <div class="container">
+      <div class="item-2 grid">
+        <div class="banner-item">
+          <div class="banner-item-img">
+            <img src="/img/banner/grocery-flex-banner-1.jpg">
+          </div>
+          <div class="banner-info">
+            <div class="banner-info-title">
+              <a href="#"><h2>Big deals not to be missed</h2></a>
+            </div>
+            <div class="banner-btn">
+              <a href="#" class="btn">Shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner-item">
+          <div class="banner-item-img">
+            <img src="/img/banner/grocery-flex-banner-2.jpg">
+          </div>
+          <div class="banner-info">
+            <div class="banner-info-title">
+              <a href="#"><h2>Everyday low prices</h2></a>
+            </div>
+            <div class="banner-btn">
+              <a href="#" class="btn">Shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner-item">
+          <div class="banner-item-img">
+            <img src="/img/banner/grocery-flex-banner-3.jpg">
+          </div>
+          <div class="banner-info">
+            <div class="banner-info-title">
+              <a href="#"><h2>Big brands, bigger value</h2></a>
+            </div>
+            <div class="banner-btn">
+              <a href="#" class="btn">Shop</a>
+            </div>
+          </div>
+        </div>
+        <div class="banner-item">
+          <div class="banner-item-img">
+            <img src="/img/banner/grocery-flex-banner-4.jpg">
+          </div>
+          <div class="banner-info">
+            <div class="banner-info-title">
+              <a href="#"><h2>Free next day delivery</h2></a>
+            </div>
+            <div class="banner-btn">
+              <a href="#" class="btn">Shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Categories -->
+  <section class="categories padding">
+    <div class="container">
+      <div class="heading">
+        <h4>Categories</h4>
+      </div>
+      <div class="item-6 grid">
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-1.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-2.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-3.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-4.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-5.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-6.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-7.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-8.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-9.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-10.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-11.jpg" width="100%">
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-img">
+            <img src="/img/categories/grocery-category-banner-12.jpg" width="100%">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
             
   <script type="module" src="index.js"></script>
   <script src="app.js"></script>
