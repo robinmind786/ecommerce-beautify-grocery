@@ -399,7 +399,6 @@ nav .topnav .closebtn {
 	nav .topnav .nav-links {
 		display: block;
 		position: fixed;
-                top:0;
 		left: 0;
 		bottom: 0;
 		height: 100%;
@@ -738,4 +737,74 @@ nav .topnav .closebtn {
 /*category*/
 .categories .grid {
 	padding-top: 50px;
+}
+
+
+
+footer {
+	background: #052c1e;
+	padding: 100px 0;
+}
+
+footer .footer-body img {
+	width: 160px;
+}
+
+footer .footer-body {
+	color: var(--normal-color);
+}
+
+footer .footer-body .footer-address {
+	margin-top: 10px;
+}
+
+
+footer .footer-body .footer-social {
+	margin-top: 20px;
+}
+
+footer .footer-body .footer-social ul {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+footer .footer-body .footer-social ul li {
+	list-style: none;
+}
+
+
+footer .footer-body .footer-social ul li a {
+	font-size: 18px;
+	color: var(--normal-color);
+}
+
+footer .footer-item-heading {
+	color: var(--main-color);
+	font-size: 16px;
+}
+
+footer .footer-body {
+	margin-top: 2rem;
+}
+
+footer .footer-body .link {
+	display: flex;
+	flex-direction: column;
+}
+
+footer .footer-body .link li {
+	list-style: none;
+	padding: 5px 0;
+}
+
+footer .footer-body .link li a {
+	color: var(--normal-color);
+	font-size: 1rem;
+	transition: all .3s ease;
+	white-space: nowrap;
+}
+
+footer .footer-body .link li a:hover {
+	color: var(--main-color);
 }
