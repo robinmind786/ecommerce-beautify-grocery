@@ -16,6 +16,8 @@ const init = async () => {
 		display(featured, getElement('#featured'));
 		const newpro = store.filter((product) => product.newpro === true);
 		display(newpro, getElement('#newProduct'));
+		const holiday = store.filter((product) => product.holiday === true);
+		display(holiday, getElement('#holiday'));
 	}
 }
 

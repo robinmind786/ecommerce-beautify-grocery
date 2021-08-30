@@ -1,4 +1,6 @@
-const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/api_json_data/main/data.js';
+// const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/store_products_api/main/products.js';
+// const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/store_products_api/main/products.json';
+const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/json_data_api/main/data.js';
 
 
 const getElement = (selection) => {

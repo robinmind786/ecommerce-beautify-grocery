@@ -325,18 +325,18 @@
             "image": [
                 {
                     "id": "09",
-                    "url": "./img/products/09.png",
-                    "filename": "product-9.png",
+                    "url": "./img/products/09.jpg",
+                    "filename": "product-9.jpg",
                     "size": 62864,
                     "type": "image/jpg",
                     "thumbnails": {
                         "small": {
-                            "url": "./img/products/09.png",
+                            "url": "./img/products/09.jpg",
                             "width": 56,
                             "height": 36
                         },
                         "large1": {
-                            "url": "./img/products/09.png",
+                            "url": "./img/products/09.jpg",
                             "width": 149,
                             "height": 149
                         },
