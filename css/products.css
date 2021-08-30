@@ -35,6 +35,10 @@
 	margin-top: 15px;
 }
 
+.products .product-info .product-title  {
+	height: 100px;
+}
+
 .products .product-info .product-title a {
 	color: var(--dark-color);
 	font-size: 15px;
