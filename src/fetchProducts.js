@@ -1,12 +1,10 @@
-import { allProductsUrl } from './utils.js';
+import { allProductsUrl } from './utils.js'; 
 
-const fetchProducts = async (products) => {
-	const response = await fetch(allProductsUrl).catch((error)=> console.log(error));
-	if(response) {
-		return response.json();
-	}
-	return response;
-}
-
+const fetchProducts = async () => {
+  const response = await fetch(allProductsUrl).catch((err) => console.log(err));
+  if(response) return response.json();
+  return response;
+};
 
 export default fetchProducts;
+

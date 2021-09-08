@@ -1,6 +1,6 @@
-// const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/store_products_api/main/products.js';
-// const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/store_products_api/main/products.json';
-const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/json_data_api/main/data.js';
+// const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/b6b629-big-commerce-beautify-grocery-api/main/grocery-products.json';
+// const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/b6b629-big-commerce-beautify-grocery-api/main/grocery-products2.json';
+const allProductsUrl = 'https://raw.githubusercontent.com/robinmind786/b6b629-big-commerce-beautify-grocery-api/main/grocery-products3.json';
 
 
 const getElement = (selection) => {
@@ -11,7 +11,7 @@ const getElement = (selection) => {
 	);
 };
 
-const getStorageItem = function(item) {
+const getStorageItem = (item) => {
 	let storageItem = localStorage.getItem(item);
 	if(storageItem) {
 		storageItem = JSON.parse(localStorage.getItem(item));
@@ -20,14 +20,17 @@ const getStorageItem = function(item) {
 	}
 	return storageItem;
 };
+
+
 const setStorageItem = (name, item) => {
 	localStorage.setItem(name, JSON.stringify(item));
 };
 
+
 export {
 	getElement,
 	allProductsUrl,
-	getStorageItem,
 	setStorageItem,
+	getStorageItem
 
-}
+};

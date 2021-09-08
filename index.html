@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Welcome to RobinMind Shop</title>
-  <script defer src="/css/font-awesome/js/all.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="/css/style.css">
   <link rel="stylesheet" type="text/css" href="/css/responsive.css">
   <link rel="stylesheet" type="text/css" href="/css/animation.css">
@@ -20,7 +20,7 @@
       <div class="container fh">
         <div class="topnav-alert-content">
           <div class="topnav-alert-left">
-            <i class="fas fa-phone"></i> Hotline:+88017 63408494          
+            <i class="fa fa-phone"></i> Hotline:+88017 63408494          
           </div>
           <div class="topnav-alert-center">
             Covid 19 Delivery Update: <a href="#">Click Here</a>
@@ -28,8 +28,8 @@
           <div class="topnav-alert-right" id="currency">
             Select Currency: USD
             <ul class="sub-menu" id="currMenu">
-              <li><a href="#"><i class="fas fa-dollar"></i>USD</a></li>
-              <li><a href="#"><i class="fas fa-eur"></i>EUR</a></li>
+              <li><a href="#"><i class="fa fa-dollar"></i>USD</a></li>
+              <li><a href="#"><i class="fa fa-eur"></i>EUR</a></li>
             </ul>
           </div>
         </div>
@@ -43,18 +43,18 @@
           </div>
           <div class="search-box">
             <div class="burger" onclick="showNav()">
-              <i class="fas fa-bars"></i>
+              <i class="fa fa-bars"></i>
               <span>Menu</span>
             </div>
             <div class="input-box">
-              <button type="submit"><i class="fas fa-search"></i></button>
+              <button type="submit"><i class="fa fa-search"></i></button>
               <input type="search" name="search" placeholder="Search Product Name/Type or Brand">
             </div>
           </div>
           <div class="account">
             <div class="account-content">
               <div class="account-icon">
-                <i class="fas fa-user"></i>
+                <i class="fa fa-user"></i>
               </div>
               <div class="account-title">
                 <p>Sign & Register</p>
@@ -62,7 +62,7 @@
             </div>
             <div class="account-content">
               <div class="account-icon">
-                <i class="fas fa-shopping-cart"></i>
+                <i class="fa fa-shopping-cart"></i>
                 <span>3</span>
               </div>
               <div class="account-title">
@@ -71,10 +71,10 @@
             </div>
             <div class="account-content-mobile">
               <div class="account-content-mobile-content">
-                <a href="#"><i class="fas fa-phone"></i></a>
+                <a href="#"><i class="fa fa-phone"></i></a>
               </div>
               <div class="account-content-mobile-content">
-                <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                <a href="#"><i class="fa fa-shopping-bag"></i></a>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@
             <ul class="links">
               <li><a href="#">Bakery & Pastry</a></li>
               <li class="sub-item-link has-collapsible">
-                <a href="#">Beverage</a><i class="fas fa-angle-down arrow"></i>
+                <a href="#">Beverage</a><i class="fa fa-angle-down arrow"></i>
                 <ul class="dropdown">
                   <li><a href="#">Juice & Syrup</a></li>
                   <li><a href="#">Water</a></li>
@@ -99,7 +99,7 @@
               <li><a href="#">Frozen Food</a></li>
               <li><a href="#">Sweet Grocery</a></li>
               <li class="sub-item-link has-collapsible">
-                <a href="#">Pet</a><i class="fas fa-angle-down arrow"></i>
+                <a href="#">Pet</a><i class="fa fa-angle-down arrow"></i>
                 <ul class="dropdown">
                   <li><a href="#">Juice & Syrup</a></li>
                   <li><a href="#">Water</a></li>
@@ -120,31 +120,31 @@
         <ul class="bottom-links">
           <li>
             <a href="" class="active">
-              <div class="icon"><i class="fas fa-home"></i></div>
+              <div class="icon"><i class="fa fa-home"></i></div>
               <div class="icon-link">Home</div>
            </a>
           </li>
           <li>
             <a href="">
-              <div class="icon"><i class="fas fa-shopping-bag"></i></div>
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
               <div class="icon-link">Shop</div>
            </a>
           </li>
           <li>
             <a href="">
-              <div class="icon"><i class="fas fa-fire"></i></div>
+              <div class="icon"><i class="fa fa-fire"></i></div>
               <div class="icon-link">Sale</div>
            </a>
           </li>
           <li>
             <a href="">
-              <div class="icon"><i class="fas fa-credit-card"></i></div>
+              <div class="icon"><i class="fa fa-credit-card"></i></div>
               <div class="icon-link">Checkout</div>
            </a>
           </li>
           <li>
             <a href="">
-              <div class="icon"><i class="fas fa-envelope"></i></div>
+              <div class="icon"><i class="fa fa-envelope"></i></div>
               <div class="icon-link">Contact</div>
            </a>
           </li>
@@ -276,66 +276,42 @@ hasCollapsible.forEach(function (collapsible) {
         <h4>Featured Products</h4>
       </div>
       <div class="products-6 grid" id="featured">
-        <h2 class="section-loading">
-          loading...
-        </h2>
-        <!-- <div class="item">
-          <div class="item-content">
-            <a href="">
-              <div class="product-img">
-                <img src="/img/products/01.jpg">
-                <div class="product-img-overlay">
-                  <img src="/img/products/overlay/01.jpg">
-                </div>
-              </div>
-            </a>
-            <div class="product-info">
-              <div class="product-title">
-                <a href="#">Gatorade Whey Protein Recover Bars, Peanut Butter Chocolate</a>
-              </div>
-              <div class="product-price">
-                <h3>$22.99</h3>
-              </div>
-              <div class="product-cart">
-                <a href="" class="cartBtn">Add to cart</a>
-              </div>
-              <div class="product-quick-view">
-                <a href="#"><i class="fas fa-search"></i>Quick view</a>
-              </div>
-            </div>
-          </div>
-        </div> -->
+
+
+
       </div>
     </div>
   </section>
+
   <!-- New Products -->
   <section class="products padding">
     <div class="container">
       <div class="heading">
         <h4>New Products</h4>
       </div>
-      <div class="products-6 grid" id="newProduct">
-        <h2 class="section-loading">
-          loading...
-        </h2>
+      <div class="products-6 grid" id="newpro">
+
+
 
       </div>
     </div>
   </section>
-  <!-- Sale Holiday -->
+
+    <!-- Holidays Products -->
   <section class="products padding">
     <div class="container">
       <div class="heading">
-        <h4>Sale Holiday</h4>
+        <h4>Holidays Products</h4>
       </div>
-      <div class="products-6 grid" id="holiday">
-        <h2 class="section-loading">
-          loading...
-        </h2>
+      <div class="products-6 grid" id="holidays">
+
+
 
       </div>
     </div>
   </section>
+
+
   <!-- Footer -->
   <footer>
     <div class="container">
