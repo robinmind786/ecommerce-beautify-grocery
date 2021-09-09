@@ -24,7 +24,7 @@ const init = async function() {
 
 	}
 
-	// FIx Sale Showing
+	// FixBug Sale Showing
 	const saleText = document.querySelectorAll('#saleText')
 	const sLen = saleText.length;
 	var i;

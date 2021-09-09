@@ -102,7 +102,9 @@
 
 
 
-
+.filter-error {
+	text-align: center;
+}
 
 .loader {
   border: 16px solid #f3f3f3;
@@ -126,4 +128,149 @@
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.page-link  {
+	padding: 16px 0;
+}
+
+.page-link .page-link-content {
+	display: flex;
+}
+
+.page-link .page-link-content div {
+	margin: 0 5px;
+}
+
+.page-link .page-link-content div a {
+	color: var(--dark-color);
+	font-weight: 600;
+}
+
+.page-link .page-link-content div a:hover {
+	color: var(--main-color);
+}
+
+.page-link  .page-linkg-heading h1{
+	margin-top: 5px;
+	font-size: 40px;
+}
+
+/*allproducts*/
+.filter {
+	padding-right: 50px;
+	border-right: 1px solid #ccc;
+}
+
+.filter .search-box {
+	padding-bottom: 30px;
+}
+
+.filter .search-box .input-box {
+	border: 1px solid #ccc;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 5px;
+}
+
+.filter .search-box .input-box input {
+	width: 100%;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	padding: 0 16px;
+}
+
+
+.filter .search {
+	border-top: 1px solid #ccc;
+	margin-top: 16px;
+}
+
+
+.filter .search h2 {
+	border-bottom: 1px solid #ccc;
+	padding: 10px 0;
+}
+.filter .search ul {
+	margin-top: 10px;
+}
+
+.filter .search ul li {
+	list-style: none;
+	line-height: 40px;
+}
+
+.filter .search ul li button {
+	border: none;
+	outline: none;
+	background-color: inherit;
+	font-size: 18px;
+	font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+	color: #333;
+	transition: all .3s ease;
+}
+
+.filter .search .input-box {
+
+	margin-top: 16px;
+}
+
+.filter .search .input-box form input {
+	width: 100%;
+}
+
+.filter .search p {
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.filter .search ul li button:hover {
+	cursor: pointer;
+	color: var(--main-color);
+}
+
+
+
+.sort .sort-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sort .sort-item .sort-left ul {
+	display: flex;
+}
+
+.sort .sort-item .sort-left ul li {
+	list-style: none;
+	padding-right: 20px;
+}
+
+.sort .sort-item .sort-left ul li button {
+	font-size: 25px;
+	background-color: var(--main-color);
+	border: none;
+	outline: none;
+	color: var(--normal-color);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.sort .sort-item .sort-left ul li button:hover {
+	cursor: pointer;
+}
+
+
+
+.loading {
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.all-items {
+	padding-bottom: 50px;
 }

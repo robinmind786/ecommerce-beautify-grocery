@@ -151,166 +151,91 @@
         </ul>
     </div>
   </header>
-  <script>
-const hasCollapsible = document.querySelectorAll(".has-collapsible");
-
-hasCollapsible.forEach(function (collapsible) {
-  collapsible.addEventListener("click", function () {
-    const subMenu = document.querySelectorAll('.dropdown');
-    subMenu.entries()
-    subMenu.forEach(function(subitem){
-      subitem.classList.toggle('dropdownShow')
-    });
-  });
-});
-
-// hasCollapsible.forEach(function (collapsible) {
-//   collapsible.addEventListener("click", function () {
-//     const subMenu = document.querySelectorAll('.dropdown')
-//     collapsible.classList.toggle("active");
-
-//     hasCollapsible.forEach(function (otherCollapsible) {
-//       if (otherCollapsible !== collapsible) {
-//         otherCollapsible.classList.remove("active");
-//       }
-//     });
-//   });
-// });
-  </script>
-  <!-- Hero -->
-  <section class="hero">
-    <div class="slider-container">
-      
-      <div class="mySlides">
-        <img src="/img/slider/grocery-slide-3.jpg">
-        <div class="slider-info-mobile">
-          <div class="slider-offer">
-            <h1>FROM $10</h1>
-          </div>
-          <div class="slider-title">
-            <h3>Best Deals, only for you</h3>
-          </div>
-          <div class="slider-desc">
-            <p>On Selected Vegetables</p>
-          </div>
-          <div class="slider-btn">
-            <a href="products.html" class="btn">Shop</a>
-          </div>
-        </div>
-      </div>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-    </div>
-  </section>
-  <!-- Banner -->
-  <section class="banner">
-    <div class="banner-container">
-      <div class="full-width-banner">
-        <img src="/img/banner/grocery-leatherboard-banner.jpg">
-      </div>
-    </div>
+  <!-- Page Link -->
+  <section class="page-link">
     <div class="container">
-      <div class="item-2 grid">
-        <div class="banner-item">
-          <div class="banner-item-img">
-            <img src="/img/banner/grocery-flex-banner-1.jpg">
-          </div>
-          <div class="banner-info">
-            <div class="banner-info-title">
-              <a href="#"><h2>Big deals not to be missed</h2></a>
-            </div>
-            <div class="banner-btn">
-              <a href="#" class="btn">Shop</a>
-            </div>
-          </div>
-        </div>
-        <div class="banner-item">
-          <div class="banner-item-img">
-            <img src="/img/banner/grocery-flex-banner-2.jpg">
-          </div>
-          <div class="banner-info">
-            <div class="banner-info-title">
-              <a href="#"><h2>Everyday low prices</h2></a>
-            </div>
-            <div class="banner-btn">
-              <a href="#" class="btn">Shop</a>
-            </div>
-          </div>
-        </div>
-        <div class="banner-item">
-          <div class="banner-item-img">
-            <img src="/img/banner/grocery-flex-banner-3.jpg">
-          </div>
-          <div class="banner-info">
-            <div class="banner-info-title">
-              <a href="#"><h2>Big brands, bigger value</h2></a>
-            </div>
-            <div class="banner-btn">
-              <a href="#" class="btn">Shop</a>
-            </div>
-          </div>
-        </div>
-        <div class="banner-item">
-          <div class="banner-item-img">
-            <img src="/img/banner/grocery-flex-banner-4.jpg">
-          </div>
-          <div class="banner-info">
-            <div class="banner-info-title">
-              <a href="#"><h2>Free next day delivery</h2></a>
-            </div>
-            <div class="banner-btn">
-              <a href="#" class="btn">Shop</a>
-            </div>
-          </div>
-        </div>
+      <div class="page-link-content">
+        <div class="link"><a href="index.html"><i class="fa fa-home"></i></a></div>
+        <div class="link"><i class="fa fa-long-arrow-right"></i></div>
+        <div class="link"><a href="products.html">Shop</a></div>
+      </div>
+      <div class="page-linkg-heading">
+        <h1>Shop</h1>
       </div>
     </div>
   </section>
-  <!-- Featured Products -->
-  <section class="products padding">
+  <!-- Products View -->
+  <section class="all-products">
     <div class="container">
-      <div class="heading">
-        <h4>Featured Products</h4>
-      </div>
-      <div class="products-6 grid" id="featured">
+      <div class="grid-2 grid">
+        <div class="filter">
+          <div class="container">
+            <div class="search-box">
+              <form class="input-form">
+                <div class="input-box">
+                  <input type="search" name="" placeholder="Filter products by name, SKU, attribute" class="search-input">
+                </div>
+              </form>
+            </div>
+            <div class="search">
+              <h2>Brand</h2>
+              <ul class="search-container">
+
+              </ul>
+            </div>
+            <div class="search">
+              <h2>Price</h2>
+              <div class="input-box">
+                <form class="price-form">
+                  <input
+                    type="range"
+                    class="price-filter"
+                    min="0"
+                    value="50"
+                    max="100"
+                  />
+                </form>
+                <p class="price-value"></p>
+              </div>
+            </div>
+            <div class="search">
+              <h2>Others</h2>
+              <ul class="search-container">
+                <li><button>In Featured</button></li>
+                <li><button>In Stock</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="all-items">
+            <div class="products">
+              <div class="sort">
+                <div class="container">
+                  <div class="sort-item">
+                    <div class="sort-left">
+                      <ul>
+                        <li><button><i class="fa fa-th-large"></i></button></li>
+                        <li><button><i class="fa fa-th-list"></i></button></li>
+                      </ul>
+                    </div>
+                    <div class="sort-right">
+                      <h2>Sort By</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="container">
+                <div class="products-4 grid" id="allProducts">
+                  <div class="loader"></div>
 
 
-
+                </div>
+              </div>
+            </div>
+        </div>
       </div>
     </div>
   </section>
-
-  <!-- New Products -->
-  <section class="products padding">
-    <div class="container">
-      <div class="heading">
-        <h4>New Products</h4>
-      </div>
-      <div class="products-6 grid" id="newpro">
-
-
-
-      </div>
-    </div>
-  </section>
-
-    <!-- Holidays Products -->
-  <section class="products padding">
-    <div class="container">
-      <div class="heading">
-        <h4>Holidays Products</h4>
-      </div>
-      <div class="products-6 grid" id="holidays">
-
-
-
-      </div>
-    </div>
-  </section>
-
 
   <!-- Footer -->
   <footer>
@@ -396,8 +321,7 @@ hasCollapsible.forEach(function (collapsible) {
   </footer>
   <!-- Scroll To Top Button -->
   <button onclick="topFunction()" id="scrollBtn" title="Go to top">Top</button>
-            
-  <script type="module" src="index.js"></script>
+  <script type="module" src="./src/pages/products.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
